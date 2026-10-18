@@ -443,3 +443,190 @@ import java.util.*;
 //     }
 // }
 
+//28 -> Find Missing Number (1 to N)
+
+//29 -> Count Words in a String
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine().trim();
+
+//         if(str.isEmpty()) System.out.println(0);
+//         else{
+//             String[] word = str.split("\\s+");
+//             System.out.println(word.length);
+//         }
+//     }
+// }
+
+//30 -> Remove All Spaces from String
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         str = str.replaceAll(" ", "");
+//         System.out.println(str);
+//     }
+// }
+
+//31 -> Find Duplicate Elements in Array
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n]; 
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+
+//         for(int i=0; i<n; i++){
+//             for(int j=i+1; j<n; j++){
+//                 if(arr[i] == arr[j]){
+//                     System.out.println("Duplicate : ");
+//                     System.out.println(arr[i] + " ");
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//32 -> Move All Zeros to End
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         //4 0 5 0 0 6 7
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter size of an array : ");
+//         int n = sc.nextInt();
+
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+
+//         int index = 0;
+
+//         for(int i=0; i<n; i++){
+//             if(arr[i] != 0)
+//                 arr[index++] = arr[i];
+//         }
+//         while(index < n) arr[index++] = 0;
+//         System.out.println("Final array : ");
+//         for(int num : arr) System.out.print(num + " ");
+//     }
+// }
+
+//33 -> Rotate Array Right by 1 Position
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter elements of array :");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+
+//         int last = arr[n-1];
+
+//         for(int i=n-1; i>0; i--)
+//             arr[i] = arr[i-1];
+        
+//         arr[0] = last;
+
+//         System.out.println("Rotated array :");
+//         for(int num : arr) System.out.print(num + " ");
+
+//     }
+// }
+
+//34 -> Check Palindrome String
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         String rev = "";
+//         for(int i=str.length()-1; i>=0; i--)
+//             rev += str.charAt(i);
+//         System.out.println(str.equals(rev)? "Palindrome" : "Not Palindrome");    
+//     }
+// }
+
+//35 -> Count Number of Digits
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int count = 0;
+//         while(n != 0){
+//             n /= 10;
+//             count++;
+//         }
+//         System.out.println("Digits = " + count);
+//     }
+// }
+
+//36 -> Sum of Elements in Array
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         int sum = 0;
+//         for(int i=0; i<n; i++){
+//             sum += arr[i];
+//         }
+//         System.out.println("Sum is : " + sum);
+//     }
+// }
+
+//37 -> Find Minimum Element in Array
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         int min = Integer.MAX_VALUE;
+//         for(int i=0; i<n; i++){
+//             if(arr[i] < min)
+//                 min = arr[i];
+//         }
+//         System.out.println("Minimum element : " + min);
+//     }
+// }
+
+//38 -> Pattern Printing (Right Triangle)
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         char ch = '*';
+//         for(int i=0; i<n; i++){
+//             for(int j=0; j<=i; j++){
+//                 System.out.print(ch);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+//39 -> Power of a Number
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter base value : ");
+//         int base = sc.nextInt();
+//         System.out.print("enter exponent value : ");
+//         int exp = sc.nextInt();
+//         int result = 1;
+//         for(int i=1; i<=exp; i++)
+//             result *= base;
+//         System.out.println(result);    
+//     }
+// }
+
+//40 -> Decimal to Binary
