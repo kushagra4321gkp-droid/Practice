@@ -794,3 +794,258 @@ import java.util.*;
 // }
 
 //15 -> Check Anagram
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String a = sc.nextLine().toLowerCase().trim(), b = sc.nextLine().toLowerCase().trim();
+//         char[] arr1 = a.toCharArray();
+//         char[] arr2 = b.toCharArray();
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+//         System.out.println(Arrays.equals(arr1, arr2)? "Anagram" : "not Anagram");
+//     }
+// }
+
+//16 -> Remove Duplicates from String
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter the string : ");
+//         String str = sc.nextLine();
+//         String result = "";
+//         for(char ch : str.toCharArray()){
+//             if(result.indexOf(ch) == -1)
+//                 result += ch;
+//         }
+//         System.out.println(result);
+//     }
+// }
+
+//17 -> Find Second Largest in Array
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         int n1 = Integer.MIN_VALUE, n2 = Integer.MIN_VALUE;
+//         for(int i=0; i<n; i++){
+//             if(arr[i] > n1){
+//                 // n1 = arr[i]; //caution
+//                 // n2 = n1;
+//                 n2 = n1;
+//                 n1 = arr[i];
+//             }
+//             else if(arr[i] > n2 && arr[i] != n1){
+//                 n2 = arr[i];
+//             }
+//         }
+//         System.out.println("second largest : ");
+//         System.out.println(n2);
+//     }
+// }
+
+//18 -> Linear Search
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter siz of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         System.out.print("enter key : ");
+//         int key = sc.nextInt();
+//         for(int i=0; i<n; i++){
+//             if(arr[i] == key){
+//                 System.out.println("found at index : i"); break;
+//             }
+//             else{
+//                 System.out.println("not found"); break; 
+//             }  
+//         }
+//     }
+// }
+
+//18 -> Linear Search
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter the size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         System.out.print("enter key : ");
+//         int key = sc.nextInt();
+//         boolean found = false;
+//         for(int num : arr){
+//             if(key == num){
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         System.out.println(found? "found" : "not found");
+//     }
+// }
+
+//19 -> Binary Search (Sorted Array)
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         System.out.print("enter key : ");
+//         int key = sc.nextInt();
+//         int start = 0 , end = n-1;
+//         boolean found = false;
+//         while(start <= end){
+//             int mid = (start + end)/2;
+//             if(arr[mid] == key){
+//                 found = true;
+//                 break;
+//             }
+//             else if(arr[mid] < key)
+//                 start = mid + 1;
+//             else
+//                 end = mid - 1;    
+//         }
+//         System.out.println(found? "found" : "not found");
+//     }
+// }
+
+//20 -> Bubble Sort
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         for(int i=0; i<n; i++){
+//             for(int j=0; j<n-i-1; j++){
+//                 if(arr[j] > arr[j+1]){
+//                     int temp = arr[j];
+//                     arr[j] = arr[j+1];
+//                     arr[j+1] = temp;
+//                 }
+//             }
+//         }
+//         for(int num : arr)
+//             System.out.print(num + " ");
+//     }
+// }
+
+//21 -> Selection Sort
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter array size : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         for(int i=0; i<n-1; i++){
+//             int midIndex = i;
+//             for(int j=i+1; j<n; j++){
+//                 if(arr[j] < arr[midIndex])
+//                     midIndex = j;
+//             }
+//             int temp = arr[i];
+//             arr[i] = arr[midIndex];
+//             arr[midIndex] = temp;
+//         }
+//         for(int num : arr) System.out.print(num + " ");
+//     }
+// }
+
+//22 -> Insertion sort
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter array size : ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
+//         for(int i=1; i<n; i++){
+//             int temp = arr[i];
+//             int j = i-1;
+//             while(j>=0 && arr[j] > temp){
+//                 arr[j+1] = arr[j];
+//                 j--;
+//             }
+//             // System.out.println(j); 
+//             arr[j+1] = temp;
+//         }
+//         for(int num : arr) System.out.print(num + " ");
+//     }
+// }
+
+//23 -> Matrix Addition
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter row and column : ");
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         int[][] arr1 = new int[r][c];
+//         int[][] arr2 = new int[r][c];
+
+//         System.out.println("enter first array element");
+//         for(int i=0; i<r; i++){
+//             for(int j=0; j<c; j++){
+//                 arr1[i][j] = sc.nextInt();
+//             }
+//         }
+
+//         System.out.println("enter second array element");
+//         for(int i=0; i<r; i++){
+//             for(int j=0; j<c; j++){
+//                 arr2[i][j] = sc.nextInt();
+//             }
+//         }
+
+//         System.out.println("Sum : ");
+//         int[][] sum = new int[r][c];
+//         for(int i=0; i<r; i++){
+//             for(int j=0; j<c; j++){
+//                 sum[i][j] = arr1[i][j] + arr2[i][j];
+//                 System.out.print(sum[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+//24 -> Transpose of Matrix
+class DsaDemo{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter row and column : ");
+        int r = sc.nextInt();
+        int c = sc.nextInt();
+        int[][] arr = new int[r][c];
+        System.out.println("enter array elements : ");
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("transpose");
+        for(int j=0; j<c; j++){
+            for(int i=0; i<r; i++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
