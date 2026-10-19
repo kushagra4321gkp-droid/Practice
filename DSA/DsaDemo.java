@@ -630,3 +630,167 @@ import java.util.*;
 // }
 
 //40 -> Decimal to Binary
+
+//4 -> Fibonacci
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter no of terms : ");
+//         int n = sc.nextInt();
+//         int a = 0, b = 1;
+//         for(int i=0; i<n; i++){
+//             System.out.print(a + " ");
+//             int c = a + b;
+//             a = b;
+//             b = c;
+//         }
+//     }
+// }
+
+//5 -> Reverse a number
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int rev = 0;
+//         while(n != 0){
+//             rev = rev * 10 + n % 10;
+//             n /= 10;
+//         }
+//         System.out.println(rev);
+//     }
+// }
+
+//6 -> Check Palindrome Number
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int temp = n;
+//         int rev = 0;
+//         while(n!=0){
+//             rev = rev * 10 + n % 10;
+//             n /= 10;
+//         }
+//         System.out.println(temp == rev? "Palindrome" : "Not Palindrome");
+//     }
+// }
+
+// //7 -> Armstrong Number
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int temp = n;
+//         int sum = 0;
+//         while(n!=0){
+//             int digit = n % 10;
+//             sum += digit * digit * digit;
+//             n /= 10;
+//         }
+//         System.out.println(sum == temp? "Armstrong" : "not Armstrong");
+//     }
+// }
+
+//8 -> Sum of Digits
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int sum = 0;
+//         while(n!=0){
+//             int rem = n % 10;
+//             sum += rem;
+//             n /= 10;
+//         }
+//         System.out.println("Sum of Digits : " + sum);
+//     }
+// }
+
+//9 -> Largest of Three Numbers
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
+//         int largest = Math.max(a, Math.max(b, c));
+//         System.out.println("largest : " + largest);
+//     }
+// }
+
+//10 -> GCD of Two Numbers
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         while(b!=0){
+//             int temp = b;
+//             b = a % b;
+//             a = temp;
+//         }
+//         System.out.println("GCD : " + a);
+//     }
+// }
+
+//11 -> LCM of Two Numbers
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt(), b = sc.nextInt();
+//         int x = a, y = b;
+//         while(b!=0){
+//             int temp = b;
+//             b = a % b;
+//             a = temp;
+//         }
+//         int LCM = (x * y)/a;
+//         System.out.println("LCM : " + LCM);
+//     }
+// }
+
+//12 -> Check Leap Year
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int year = sc.nextInt();
+//         if((year%4 == 0 && year%100 != 0) || (year%400 == 0))
+//             System.out.println("leap year");
+//         else
+//             System.out.println("not leap year");    
+//     }
+// }
+
+//13 -> Count Vowels and Consonants
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         char[] arr = str.toLowerCase().toCharArray();
+//         int vowel = 0, consonant = 0;
+//         for(char ch : arr){
+//             if(Character.isLetter(ch)){
+//                 if("aeiou".indexOf(ch) != -1){
+//                     vowel++;
+//                 }
+//                 else
+//                     consonant++;
+//             }
+//         }
+//         System.out.println("Vowel : " + vowel + ", Consonent : " + consonant);
+//     }
+// }
+
+//14 -> Reverse a String
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter string : ");
+//         String str = sc.nextLine();
+//         String rev = "";
+//         for(int i=str.length()-1; i>=0; i--)
+//             rev += str.charAt(i);
+//         System.out.println(rev);
+//     }
+// }
+
+//15 -> Check Anagram
