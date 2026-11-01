@@ -1381,3 +1381,23 @@ import java.util.*;
 //         }
 //         }
 // }
+
+//50 -> Character Hashing
+class DsaDemo{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter size of an array : ");
+        int n = sc.nextInt();
+        System.out.print("enter the word : ");
+        String s = sc.next();
+        int[] hashArr = new int[26];
+        for(int i=0; i<s.length(); i++) hashArr[s.charAt(i) - 'a']++;
+        System.out.print("enter number of queries : ");
+        int queries = sc.nextInt();
+        while(queries-- > 0){
+            System.out.print("enter the character to find the frequency : ");
+            char ch = sc.next().charAt(0);
+            System.out.println("frequency of " + ch + " : " + hashArr[ch - 'a']);
+        }
+    }
+}
