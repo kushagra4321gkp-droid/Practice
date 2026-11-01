@@ -1273,18 +1273,83 @@ import java.util.*;
 // }
 
 //39 -> Power of a Number
-class DsaDemo{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter base and exponent : ");
-        int base = sc.nextInt();
-        int exp = sc.nextInt();
-        double result = 1;
-        for(int i=0; i<exp; i++){
-            result *= base;
-        }
-        System.out.print("result : " + result);
-    }
-}
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter base and exponent : ");
+//         int base = sc.nextInt();
+//         int exp = sc.nextInt();
+//         double result = 1;
+//         for(int i=0; i<exp; i++){
+//             result *= base;
+//         }
+//         System.out.print("result : " + result);
+//     }
+// }
 
-//40 -> Decimal to Binary
+//46 ->  Check Substring
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter string : ");
+//         String str = sc.nextLine();
+//         System.out.print("enter substring : ");
+//         String sub = sc.nextLine();
+//         if(str.contains(sub))
+//             System.out.println("substring present");
+//         else
+//             System.out.println("substring not present");    
+//     }
+// }
+
+//47 -> two Sum
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter array size : ");
+//         int n = sc.nextInt();
+//         int[] nums = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) nums[i] = sc.nextInt();
+//         System.out.print("enter target : ");
+//         int target = sc.nextInt();
+//         System.out.println("Indices are : ");
+//         for(int idx : giveIndices(nums, target)) System.out.print(idx + " ");
+//     }
+//     public static int[] giveIndices(int[] nums, int target){
+//         for(int i=0; i<nums.length-1; i++){
+//             for(int j=i+1; j<nums.length; j++){
+//                 if(nums[i] + nums[j] == target){
+//                     return new int[] {i, j};
+//                 }
+//             }
+//         }
+//         return new int[]{};
+//     }
+// }
+
+//48 -> Remove Duplicates from Sorted Array
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         int[] nums = new int[n];
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<n; i++) nums[i] = sc.nextInt();
+//         for(int array : countUnique(nums)) System.out.println(array + " ");
+//     }
+//     public static int[] countUnique(int[] nums){
+//         int[] arr = new int[nums.length];
+//         int count = 0;
+//         for(int i=0; i<nums.length; i++){
+//             for(int j=0; j<=i; j++){
+//                 if(nums[i] != arr[j]){
+//                     arr[j] = nums[i];
+//                     count++;
+//                 }
+//             }
+//         }
+//         return new int[] {arr, count};
+//     }
+// }
