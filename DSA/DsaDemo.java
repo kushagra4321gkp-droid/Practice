@@ -1353,3 +1353,31 @@ import java.util.*;
 //         return new int[] {arr, count};
 //     }
 // }
+
+//49 -> Number HASHING
+// class DsaDemo{
+//     private static void hashFunc(int[] arr, int[] hashArr){
+//             for(int i=0; i<arr.length; i++) hashArr[arr[i]]++;
+//         }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of array : ");
+//         int size = sc.nextInt();
+//         int[] arr = new int[size];
+//         int largest = -1;
+//         System.out.println("enter array elements : ");
+//         for(int i=0; i<size; i++){
+//             arr[i] = sc.nextInt();
+//             if(arr[i] > largest) largest = arr[i];
+//         }
+//         System.out.print("enter number of queries : ");
+//         int queries = sc.nextInt();
+//         int[] hashArr = new int[largest+1];
+//         hashFunc(arr, hashArr);
+//         while(queries-- >0){
+//             System.out.print("enter number to find the frequency in the array : ");
+//             int num = sc.nextInt();
+//             System.out.println("result : " + hashArr[num]);
+//         }
+//         }
+// }
