@@ -79,13 +79,13 @@ import java.util.*;
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         int n = sc.nextInt();
-//         int temp = n;
+//         int maxCount = n;
 //         int rev = 0;
 //         while(n != 0){
 //             rev = rev * 10 + n % 10;
 //             n /= 10;
 //         }
-//         System.out.println(temp == rev? "Palindrome" : "Not Palindrome");
+//         System.out.println(maxCount == rev? "Palindrome" : "Not Palindrome");
 //     }
 // }
 
@@ -94,13 +94,13 @@ import java.util.*;
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         int n = sc.nextInt();
-//         int temp = n, sum = 0;
+//         int maxCount = n, sum = 0;
 //         while(n != 0){
 //             int digit = n % 10;
 //             sum += digit * digit * digit;
 //             n /= 10;
 //         }
-//         System.out.println(temp == sum? "Armstrong" : "Not Armstrong");
+//         System.out.println(maxCount == sum? "Armstrong" : "Not Armstrong");
 //     }
 // }
 
@@ -134,9 +134,9 @@ import java.util.*;
 //         Scanner sc = new Scanner(System.in);
 //         int a = sc.nextInt(), b = sc.nextInt();
 //         while(b != 0){
-//             int temp = b;
+//             int maxCount = b;
 //             b = a % b;
-//             a = temp;
+//             a = maxCount;
 //         }
 //         System.out.println(a);
 //     }
@@ -149,9 +149,9 @@ import java.util.*;
 //         int a = sc.nextInt(), b = sc.nextInt();
 //         int x = a, y = b;
 //         while(b != 0){
-//             int temp = b;
+//             int maxCount = b;
 //             b = a % b;
-//             a = temp;
+//             a = maxCount;
 //         }
 //         b = (x * y)/a;
 //         System.out.println("Lcm : " + b); 
@@ -270,9 +270,9 @@ import java.util.*;
 //         for(int i=0; i<n; i++){
 //             for(int j=0; j<n-i-1; j++){
 //                 if(arr[j] > arr[j+1]){
-//                     int temp = arr[j];
+//                     int maxCount = arr[j];
 //                     arr[j] = arr[j+1];
-//                     arr[j+1] = temp;
+//                     arr[j+1] = maxCount;
 //                 }
 //             }
 //         }
@@ -297,9 +297,9 @@ import java.util.*;
 //                 if(arr[j] < arr[midIndex])
 //                     midIndex = j;
 //             }
-//             int temp = arr[i];
+//             int maxCount = arr[i];
 //             arr[i] = arr[midIndex];
-//             arr[midIndex] = temp;
+//             arr[midIndex] = maxCount;
 //         }
 
 //         for(int num : arr)
@@ -666,13 +666,13 @@ import java.util.*;
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         int n = sc.nextInt();
-//         int temp = n;
+//         int maxCount = n;
 //         int rev = 0;
 //         while(n!=0){
 //             rev = rev * 10 + n % 10;
 //             n /= 10;
 //         }
-//         System.out.println(temp == rev? "Palindrome" : "Not Palindrome");
+//         System.out.println(maxCount == rev? "Palindrome" : "Not Palindrome");
 //     }
 // }
 
@@ -681,14 +681,14 @@ import java.util.*;
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         int n = sc.nextInt();
-//         int temp = n;
+//         int maxCount = n;
 //         int sum = 0;
 //         while(n!=0){
 //             int digit = n % 10;
 //             sum += digit * digit * digit;
 //             n /= 10;
 //         }
-//         System.out.println(sum == temp? "Armstrong" : "not Armstrong");
+//         System.out.println(sum == maxCount? "Armstrong" : "not Armstrong");
 //     }
 // }
 
@@ -724,9 +724,9 @@ import java.util.*;
 //         int a = sc.nextInt();
 //         int b = sc.nextInt();
 //         while(b!=0){
-//             int temp = b;
+//             int maxCount = b;
 //             b = a % b;
-//             a = temp;
+//             a = maxCount;
 //         }
 //         System.out.println("GCD : " + a);
 //     }
@@ -739,9 +739,9 @@ import java.util.*;
 //         int a = sc.nextInt(), b = sc.nextInt();
 //         int x = a, y = b;
 //         while(b!=0){
-//             int temp = b;
+//             int maxCount = b;
 //             b = a % b;
-//             a = temp;
+//             a = maxCount;
 //         }
 //         int LCM = (x * y)/a;
 //         System.out.println("LCM : " + LCM);
@@ -931,9 +931,9 @@ import java.util.*;
 //         for(int i=0; i<n; i++){
 //             for(int j=0; j<n-i-1; j++){
 //                 if(arr[j] > arr[j+1]){
-//                     int temp = arr[j];
+//                     int maxCount = arr[j];
 //                     arr[j] = arr[j+1];
-//                     arr[j+1] = temp;
+//                     arr[j+1] = maxCount;
 //                 }
 //             }
 //         }
@@ -957,9 +957,9 @@ import java.util.*;
 //                 if(arr[j] < arr[midIndex])
 //                     midIndex = j;
 //             }
-//             int temp = arr[i];
+//             int maxCount = arr[i];
 //             arr[i] = arr[midIndex];
-//             arr[midIndex] = temp;
+//             arr[midIndex] = maxCount;
 //         }
 //         for(int num : arr) System.out.print(num + " ");
 //     }
@@ -975,14 +975,14 @@ import java.util.*;
 //         System.out.println("enter array elements : ");
 //         for(int i=0; i<n; i++) arr[i] = sc.nextInt();
 //         for(int i=1; i<n; i++){
-//             int temp = arr[i];
+//             int maxCount = arr[i];
 //             int j = i-1;
-//             while(j>=0 && arr[j] > temp){
+//             while(j>=0 && arr[j] > maxCount){
 //                 arr[j+1] = arr[j];
 //                 j--;
 //             }
 //             // System.out.println(j); 
-//             arr[j+1] = temp;
+//             arr[j+1] = maxCount;
 //         }
 //         for(int num : arr) System.out.print(num + " ");
 //     }
@@ -1383,21 +1383,55 @@ import java.util.*;
 // }
 
 //50 -> Character Hashing
+// class DsaDemo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("enter size of an array : ");
+//         int n = sc.nextInt();
+//         System.out.print("enter the word : ");
+//         String s = sc.next();
+//         int[] hashArr = new int[26];
+//         for(int i=0; i<s.length(); i++) hashArr[s.charAt(i) - 'a']++;
+//         System.out.print("enter number of queries : ");
+//         int queries = sc.nextInt();
+//         while(queries-- > 0){
+//             System.out.print("enter the character to find the frequency : ");
+//             char ch = sc.next().charAt(0);
+//             System.out.println("frequency of " + ch + " : " + hashArr[ch - 'a']);
+//         }
+//     }
+// }
+
+//51 -> Highest Occurring Element in an Array(Brute Force)
 class DsaDemo{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("enter size of an array : ");
-        int n = sc.nextInt();
-        System.out.print("enter the word : ");
-        String s = sc.next();
-        int[] hashArr = new int[26];
-        for(int i=0; i<s.length(); i++) hashArr[s.charAt(i) - 'a']++;
-        System.out.print("enter number of queries : ");
-        int queries = sc.nextInt();
-        while(queries-- > 0){
-            System.out.print("enter the character to find the frequency : ");
-            char ch = sc.next().charAt(0);
-            System.out.println("frequency of " + ch + " : " + hashArr[ch - 'a']);
+        System.out.print("enter array size : ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        int largest = -1;
+        System.out.println("enter array elements : ");
+        for(int i=0; i<size; i++){
+            arr[i] = sc.nextInt();
+            if(arr[i] > largest) largest = arr[i];
         }
+        int[] vis = new int[largest+1];
+        int maxCount = 0;
+        int maxNum = -1;
+        for(int i=0; i<size; i++){ 
+            if(vis[arr[i]] != 1) {
+                vis[arr[i]] = 1;
+                int count = 0;
+                for(int j=0; j<size; j++){
+                    if(arr[i] == arr[j]) count++;
+                    int temp = arr[i];
+                }
+                if(count > maxCount || (count == maxCount && arr[i] < maxNum)){
+                    maxCount = count;
+                    maxNum = arr[i];
+                }
+            }
+        }
+        System.out.print("Highest Occurring Element in an Array is -> " + maxNum + ", " + maxCount + " -> times");
     }
 }
